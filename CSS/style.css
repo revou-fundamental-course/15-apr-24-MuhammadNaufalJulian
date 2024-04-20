@@ -1,1 +1,140 @@
-/*Ini FILE CSS
+/*Ini FILE CSS*/
+
+main {
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 10px ;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-to-use {
+    text-align: start;
+    color: white;
+}
+
+.main-title {
+    text-align: center;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 0px;
+    font-size: small;
+}
+
+.main-title h1 strong{
+    color: rgb(160, 63, 7);
+}
+
+.main-section {
+    padding: 10px;
+    background-color: rgba(0, 255, 255, 0.212);
+    border-radius: 40px;
+}
+
+.container-celcius-fahrenheit{
+    padding: 5px;
+    display: grid;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0.288);
+    border-radius: 40px;
+}
+
+.section-celcius, .section-fahrenheit, .section-celcius2, .section-fahrenheit2 {
+    padding: 10px;
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+}
+
+#celcius-fahrenheit, #fahrenheit-celcius, .celcius-fahrenheit2, .fahrenheit-celcius2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.label-to-input {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 174, 255, 0.288);
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h3 {
+    background-color: aqua;
+    border-radius: 40px;
+}
+
+input {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 2px;
+    width: 10%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 5px;
+    background-color:rgba(0, 174, 255, 0.384) ;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s , transform 0.5s;
+} 
+
+button:hover {
+    background-color: rgba(0, 174, 255, 0.767);
+    transform: scale(1.5);
+}
+
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 255, 255);
+    border-color: black;
+    border: 10px;
+    padding: 1px;
+    margin: 5px;
+    border: 10px;
+    border-radius: 40px;
+}
+
+.section-rumus {
+    text-align: center;
+    background-color:rgba(0, 174, 255, 0.192);
+    border-radius: 40px;
+    padding: 0px;
+}
+
+.container-area {
+    background-color: rgba(0, 255, 255, 0.397);
+    border-radius: 40px;
+    border-color: black ;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+.hidden {
+    display: none !important;
+}

@@ -3,10 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature converter</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Temperature Converter</title>
 </head>
 <body>
+    <main>
+        <header class="main-title">
+            <h1>Temperature Converter by <strong>Muhammad Naufal Julian</strong></h1>
+        </header> 
     
-    <script src="script.js"></script>
+        <section class="main-section">
+            <!-- Section Introduction -->
+            <section class="how-to-use">
+                <ul>
+                    
+                    <li>Masukkan Suhu Derajat Celcius (&deg;C) ke kotak di bawah,</li>
+                    <li>lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).</li>
+                </ul>
+            </section>
+            <section class="container-celcius-fahrenheit">
+                <section class="celcius-fahrenheit hidden" id="celcius-fahrenheit">    
+                    <section class="section-celcius">
+                        <header>
+                            <h3>Celcius :</h3>
+                        </header>
+                        <article class="label-to-input">
+                            <input type="number" placeholder="Masukkan nilai" step="0.01" id="celcius-input">
+                            <h3>(&deg;C)</h3>
+                        </article>
+                    </section>
+                    
+                    <section class="to"><h1><strong>TO</strong></h1></section>
+                    
+                    <section class="section-fahrenheit">
+                        <header class="fahrenheit">
+                            <h3>Fahrenheit :</h3>
+                        </header>
+                        <article class="label-to-input">
+                            <input type="number" readonly placeholder="Hasil konversi" id="fahrenheit-input">
+                            <h3>(&deg;F)</h3>
+                        </article>
+                    </section>
+                </section>
+                
+                <section class="fahrenheit-celcius" id="fahrenheit-celcius">    
+                    <section class="section-fahrenheit2">
+                        <header>
+                            <h3>Fahrenheit :</h3>
+                        </header>
+                        <article class="label-to-input">
+                            <input type="number" placeholder="Masukkan nilai" step="0.01" id="fahrenheit-reverse-input">
+                            <h3>(&deg;F)</h3>
+                        </article>
+                    </section>
+                                        
+                    <section class="to"><h1><strong>TO</strong></h1></section>
+                                        
+                    <section class="section-celcius2">
+                        <header>
+                            <h3>Celcius :</h3>
+                        </header>
+                        <article class="label-to-input">
+                            <input type="number" readonly placeholder="Hasil konversi" id="celcius-reverse-input">
+                            <h3>(&deg;C)</h3>
+                        </article>
+                    </section>
+                </section>
+                
+
+                
+                <div class="main-button">
+                    <button id="convert-button">KONVERSI</button>
+                    <button id="reset-button">RESET</button>
+                    <button id="reverse-button">REVERSE</button>
+                </div>
+            </section>
+        
+            <section class="section-rumus">
+                <header>
+                    <h3>Cara Kalkulasi :</h3>
+                </header>
+                <article>
+                    <textarea class="container-area" rows="4" cols="40" readonly>Formula di sini</textarea>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <script src="/JS/script.js"></script>
 </body>
 </html>
