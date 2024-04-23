@@ -10,12 +10,10 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
+    overflow-y: auto; /* Tambahkan aturan ini */
 }
 
-.how-to-use {
-    text-align: start;
-    color: white;
-}
+/* Tambahkan aturan overflow pada main untuk mengatur scroll ke bawah */
 
 .main-title {
     text-align: center;
@@ -24,6 +22,12 @@ main {
     padding: 0px;
     font-size: small;
 }
+
+.how-to-use {
+    text-align: start;
+    color: white;
+}
+
 
 .main-title h1 strong{
     color: rgb(160, 63, 7);
@@ -143,21 +147,147 @@ button:hover {
     display: none !important;
 }
 
-
 /* Responsive layout */
 @media screen and (max-width: 768px) {
-    .container-celcius-fahrenheit {
-        grid-template-columns: 1fr;
+    main {
+        padding: 10px;
     }
 
+    .how-to-use {
+        padding: 10px;
+        font-size: small;
+    }
 
-    .celcius-fahrenheit,
-    .fahrenheit-celcius {
-        flex-direction: column;
+    .main-title {
+        font-size: small;
+    }
+
+    .main-section {
+        padding: 2px;
+    }
+
+    .container-celcius-fahrenheit {
+        padding: 2px;
+    }
+
+    .section-celcius,
+    .section-fahrenheit,
+    .section-celcius2,
+    .section-fahrenheit2 {
+        padding: 6px;
+    }
+
+    .label-to-input {
+        padding: 1px 10px;
+    }
+
+    input {
+        padding: 3px;
     }
 
     .to {
-        width: 100%;
-        margin: 5px 0;
+        font-size: 24px;
+        width: 80%;
+    }
+
+    button {
+        margin: 5px;
+        padding: 3px;
+    }
+
+    .main-button {
+        margin: 5px;
+        padding: 1px;
+    }
+
+    .section-rumus {
+        margin: 5px;
+    }
+
+    .container-area {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    main {
+        padding: 10px;
+    }
+
+    .how-to-use {
+        padding: 2px;
+        font-size: x-small;
+    }
+
+    .main-title {
+        font-size: xx-small;
+        padding: 0px;
+        margin: 10px 10px;
+    }
+
+
+    .main-section {
+        padding: 2px;
+
+    }
+
+    .container-celcius-fahrenheit {
+        padding: 2px;
+    }
+
+    #celcius-fahrenheit, #fahrenheit-celcius, .celcius-fahrenheit2, .fahrenheit-celcius2{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding:5px 5px ;
+    }
+    
+
+    .section-celcius,
+    .section-fahrenheit,
+    .section-celcius2,
+    .section-fahrenheit2 {
+        padding: 20px;
+    }
+
+    .label-to-input {
+        padding: 1px 5px;
+    }
+
+    input {
+        padding: 3px;
+    }
+
+    .to {
+        display: flex;
+        font-size: 30px;
+        background-color: rgb(0, 0, 0);
+        color: aqua;
+        padding: 5px 65px;
+        margin: 2px;
+        width: 50%;
+        height: 40%;
+        border-radius: 20px;
+    }
+
+    button {
+        margin: 5px;
+        padding: 3px;
+    }
+
+    .main-button {
+        margin: 5px;
+        padding: 1px;
+    }
+
+    .section-rumus {
+        margin: 5px;
+    }
+
+    .container-area {
+        padding: 40px 10px;
+        font-size: smaller;
     }
 }
